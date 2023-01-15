@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body id="body">
+    <h1 >Welcome, To the BMI Calculator...</h1>
+    <br>
+    <div class="form-container">
+    <form class="form-left"  >
+    <h2 clasd="pa"> If you don't know your in height in centimeter Calculate Below</h2>
+    <label for="cm">Height in Feet:</label>
+    <input type="number" pattern="[0-9]*" id="cm" name="cm"  placeholder="Enter your height in feet">
+    <label for="in">Inches:</label>
+    <input type="number" id="in" name="in" value="" placeholder="Enter inches ">
+    <br>
+    <button onclick="al()" type="button" name="button">Submit</button>
+    <br>
+    <h3 id="j"></h3>
+    </form>
+    <form class="form-right">
+      <h2 class="pa">Enter the Values Properly</h2>
+      <label for="input1">Weight:</label>
+      <input type="number" pattern="[0-9]*"  id="input1" name="input1" placeholder="Enter Your weight in Kg only" required>
+      <br>
+      <label for="input2">Height:</label>
+      <input type="number" pattern="[0-9]*" id="input2" name="input2" placeholder="Enter Your height in Feet only" required>
+      <br>
+      <button onclick="calc()" type="button">Calculate</button>
+      <h3 id="p"></h3>
+      <script src="index.js"></script>
+</form>
+</div>
+
+  </body>
+</html>
